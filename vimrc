@@ -66,7 +66,10 @@ set noswapfile                                    " do not write .swp files
 set clipboard=unnamed                             " use system clipboard
 set updatetime=100                                " gitgutter waits this long to update hunk markers
                                                   " ignore these files when completing names and in explorer
-set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
+set wildignore=
+      \.svn,CVS,.git,.hg,*.o,*.a,*.class,
+      \*.mo,*.la,*.so,*.obj,*.swp,*.jpg,
+      \*.png,*.xpm,*.gif
 
 runtime macros/matchit.vim                        " extended '%' mapping for if/then/else/end etc
 
