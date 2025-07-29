@@ -38,14 +38,13 @@ set expandtab                                     " expand tabs into spaces
 set noeol                                         " do not add emptyline characters at the end of every file
 set binary                                        " allow editing binary files
 set number                                        " precede each line with its line number
-set numberwidth=3                                 " number of culumns for line numbers
+set numberwidth=3                                 " number of columns for line numbers
 set nowrap                                        " do not wrap words (view)
 set nofoldenable                                  " dont fold by default
 set showcmd                                       " show (partial) command in status line.
 set showmatch                                     " show matching brackets.
+set cursorline                                    " highlight line where cursor is located
 set ruler                                         " line and column number of the cursor position
-set splitbelow                                    " open new split panes below
-set splitright                                    " open new split panes to the right
 set wildmenu                                      " enhanced command completion
 set visualbell                                    " use visual bell instead of beeping
 set belloff=esc                                   " prevent screen from flashing when Esc is pressed
@@ -53,7 +52,6 @@ set laststatus=2                                  " always show the status line
 set list                                          " display of non-printable characters
 set listchars=tab:▷⋅,trail:·                      " display characters for  tab and trailing spaces
 set t_Co=256                                      " use 256 colors
-set cursorline                                    " highlight line where cursor is located                
 set hidden                                        " allow switching to a new file without saving the current buffer
 set autoread                                      " automatically read file that has been changed outside of vim
 set backspace=indent,eol,start                    " standard backspace behavior
