@@ -1,0 +1,13 @@
+# ~/.config/ghostty/config
+
+# Theme
+theme = OneHalfDark
+# Font
+font-family = Monaco
+font-size = 13
+
+# Tabs
+window-new-tab-position = end
+
+# Start in fullscreen
+fullscreen = true
