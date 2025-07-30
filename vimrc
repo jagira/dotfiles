@@ -35,24 +35,24 @@ set shiftwidth=2                                  " number of spaces for indent
 set shiftround                                    " indentation: When at 3 spaces, >> takes to 4, not 5
 set expandtab                                     " expand tabs into spaces
 set nofixeol                                      " do not add emptyline characters at the end of every file
-set number                                        " precede each line with its line number
-set numberwidth=3                                 " number of columns for line numbers
 set nowrap                                        " do not wrap words (view)
 set nofoldenable                                  " dont fold by default
+set visualbell                                    " use visual bell instead of beeping
+set hidden                                        " allow switching to a new file without saving the current buffer
+set autoread                                      " automatically read file that has been changed outside of vim
+set backspace=indent,eol,start                    " standard backspace behavior
+set number                                        " precede each line with its line number
+set numberwidth=3                                 " number of columns for line numbers
 set showcmd                                       " show (partial) command in status line.
 set showmatch                                     " show matching brackets.
 set cursorline                                    " highlight line where cursor is located
 set ruler                                         " line and column number of the cursor position
 set wildmenu                                      " enhanced command completion
-set visualbell                                    " use visual bell instead of beeping
 set belloff=esc                                   " prevent screen from flashing when Esc is pressed
 set laststatus=2                                  " always show the status line
 set list                                          " display of non-printable characters
 set listchars=tab:▷⋅,trail:·                      " display characters for  tab and trailing spaces
 set t_Co=256                                      " use 256 colors
-set hidden                                        " allow switching to a new file without saving the current buffer
-set autoread                                      " automatically read file that has been changed outside of vim
-set backspace=indent,eol,start                    " standard backspace behavior
 set completeopt=menuone,preview                   " completion popup menu
 set incsearch                                     " incremental search
 set hlsearch                                      " highlight search match
