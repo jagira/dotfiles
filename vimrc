@@ -34,7 +34,7 @@ set tabstop=2                                     " number of spaces in a tab
 set shiftwidth=2                                  " number of spaces for indent
 set shiftround                                    " indentation: When at 3 spaces, >> takes to 4, not 5
 set expandtab                                     " expand tabs into spaces
-set noeol                                         " do not add emptyline characters at the end of every file
+set nofixeol                                      " do not add emptyline characters at the end of every file
 set number                                        " precede each line with its line number
 set numberwidth=3                                 " number of columns for line numbers
 set nowrap                                        " do not wrap words (view)
