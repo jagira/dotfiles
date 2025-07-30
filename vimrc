@@ -71,10 +71,6 @@ set wildignore=
 
 runtime macros/matchit.vim                        " extended '%' mapping for if/then/else/end etc
 
-" set syntax highlighting for specific file types
-autocmd BufRead,BufNewFile *.md set filetype=markdown
-autocmd BufRead,BufNewFile *.csv set filetype=csv
-
 " specify ruby keywords
 autocmd FileType ruby setlocal iskeyword+=-,!,?,=
 
