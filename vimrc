@@ -15,7 +15,7 @@ Plug 'preservim/nerdtree'                         " nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'itchyny/lightline.vim'                      " statusline
 Plug 'airblade/vim-gitgutter'                     " show sign column for git diff
-Plug 'ervandew/supertab'                          " autocomplete
+Plug 'girishji/vimcomplete'                       " autocomplete
 Plug 'tpope/vim-commentary'                       " commenting
 Plug 'tpope/vim-surround'                         " change surrounding tags / brackets
 Plug 'preservim/vim-indent-guides'                " display indent guides
@@ -108,6 +108,9 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 5
+
+"  vimcomplete config
+let g:vimcomplete_tab_enable = 1
 
 " Set spacebar as leader
 let mapleader = " "
