@@ -113,8 +113,10 @@ let g:indent_guides_color_change_percent = 5
 let mapleader = " "
 
 " NERDTree mappings
-nmap <C-P> :NERDTreeToggle<CR>                    " Ctrl-P to Display the file browser tre
-nmap <leader>p :NERDTreeFind<CR>                  " leader+p to show current file in the tree
+" Ctrl-P to Display the file browser tre
+nmap <C-P> :NERDTreeToggle<CR>
+" leader+p to show current file in the tree
+nmap <leader>p :NERDTreeFind<CR>
 
 " prevent accidentally entering Ex mode
 map Q gq
