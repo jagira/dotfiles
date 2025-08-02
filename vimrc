@@ -16,6 +16,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'itchyny/lightline.vim'                      " statusline
 Plug 'airblade/vim-gitgutter'                     " show sign column for git diff
 Plug 'girishji/vimcomplete'                       " autocomplete
+Plug 'Donaldttt/fuzzyy'                           " fuzzy finder
 Plug 'tpope/vim-commentary'                       " commenting
 Plug 'tpope/vim-surround'                         " change surrounding tags / brackets
 Plug 'preservim/vim-indent-guides'                " display indent guides
@@ -99,6 +100,10 @@ let g:delimitMate_expand_cr = 1
 autocmd vimenter * if !argc() | NERDTree | endif  " start nerdtree when vim is started without any arguments
 let NERDTreeIgnore = ['\.dump$']                  " hide .dump files in nerdtree
 
+" fuzzyy config
+let g:fuzzyy_enable_mappings = 0                  " disable default mappings
+let g:fuzzyy_dropdown = 1                         " move prompt to top
+
 " indent-guides config
 let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
@@ -116,6 +121,10 @@ let mapleader = " "
 nmap <C-P> :NERDTreeToggle<CR>
 " leader+p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
+
+" fuzzyy mappings
+nnoremap <silent> ff :FuzzyFiles<CR>
+nnoremap <silent> fg :FuzzyGrep<CR>
 
 " prevent accidentally entering Ex mode
 map Q gq
