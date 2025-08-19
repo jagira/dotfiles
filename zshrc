@@ -13,7 +13,7 @@ git_prompt() {
     if [[ -n "$git_status" ]]; then
       bg_color="yellow"
       fg_color="black"
-      marker=" +"
+      marker=" ±"
     else
       bg_color="green"
       fg_color="black"
