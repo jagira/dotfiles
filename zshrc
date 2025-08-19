@@ -11,8 +11,8 @@ git_prompt() {
     git_status="$(git status --porcelain 2>/dev/null)"
 
     if [[ -n "$git_status" ]]; then
-      bg_color="red"
-      fg_color="white"
+      bg_color="yellow"
+      fg_color="black"
       marker=" +"
     else
       bg_color="green"
@@ -26,7 +26,7 @@ git_prompt() {
 }
 
 # prompt with path and git blocks
-PROMPT='%K{blue}%F{white} %~ %k$(git_prompt)'  # path + optional git block
+PROMPT='%K{blue}%F{black} %~ %k$(git_prompt)'  # path + optional git block
 PROMPT+=$'\n'
 PROMPT+='%F{green}➜ %f'
 
