@@ -22,6 +22,10 @@ Link config
 
 ### zsh
 
+Install ohmyzsh
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 Remove .zshrc
 
     rm ~/.zshrc
