@@ -26,10 +26,6 @@ Link config
 
 ### zsh
 
-Install starship
-
-    brew install starship
-
 Remove .zshrc
 
     rm ~/.zshrc
@@ -37,10 +33,6 @@ Remove .zshrc
 Link zshrc
 
     ln -s ~/dotfiles/zshrc ~/.zshrc
-
-Link starship config
-
-    ln -s ~/dotfiles/starship.toml ~/.config/starship.toml
 
 ### vim
 

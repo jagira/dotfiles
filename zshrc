@@ -1,7 +1,13 @@
 #!/bin/zsh
 
-# starship
-eval "$(starship init zsh)"
+# ZSH prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:git:*' formats '%F{white}%f %F{green}%b%f'
+
+setopt PROMPT_SUBST
+PROMPT='%F{blue}%~%f ${vcs_info_msg_0_} %F{green}❯%f '
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
