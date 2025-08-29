@@ -111,7 +111,7 @@ VISUAL='mate'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # mise
-eval "$(/Users/jagira/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
+eval "$(mise activate zsh)" # added by https://mise.run/zsh
 
 # postgresql
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
