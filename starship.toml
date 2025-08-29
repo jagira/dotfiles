@@ -1,0 +1,20 @@
+add_newline = false
+
+format = """$directory$git_branch$character"""
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+
+[git_branch]
+format = ' [$branch]($style) '
+style = 'italic bold green'
+
+[directory]
+style = "blue"
+truncation_length = 1
+truncation_symbol = ""
+fish_style_pwd_dir_length = 100
+
+[line_break]
+disabled = true
