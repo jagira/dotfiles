@@ -4,10 +4,10 @@
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
-zstyle ':vcs_info:git:*' formats '%F{white}%f %F{green}%b%f'
+zstyle ':vcs_info:git:*' formats '%F{#fab387}%f %F{green}%b%f '
 
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~%f ${vcs_info_msg_0_} %F{green}❯%f '
+PROMPT='%F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f%F{blue}❯%f%F{green}❯%f '
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
