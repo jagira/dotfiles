@@ -4,6 +4,7 @@
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
+# show git branch name in prompt
 zstyle ':vcs_info:git:*' formats '%F{#fab387}%f %F{green}%b%f '
 
 setopt PROMPT_SUBST
@@ -13,7 +14,7 @@ PROMPT='%F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f%F{blue}❯%f%F{green}❯%f '
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # mise
-eval "$(mise activate zsh)" # added by https://mise.run/zsh
+eval "$(mise activate zsh)"
 
 # postgresql
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
