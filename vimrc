@@ -141,8 +141,3 @@ vnoremap > >gv
 " better navigation of wrapped lines
 nnoremap j gj
 nnoremap k gk
-
-" local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
