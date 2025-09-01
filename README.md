@@ -1,5 +1,5 @@
 # dotfiles
-Config files for vim, ghostty, etc.
+Brewfile and config files for vim, ghostty, etc.
 
 Clone dotfiles repo
 
@@ -9,6 +9,26 @@ Clone dotfiles repo
 ### Create config directory
 
     mkdir -p ~/.config
+
+### Setup macos
+
+Install command line tools
+
+    xcode-select install
+
+Install homebrew
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Install brew packages
+
+    brew bundle
+
+Setup git
+
+    git config --global color.ui true
+    git config --global user.name "Jigar Patel"
+    git config --global user.email "jagira@gmail.com"
 
 ### Ghostty
 
