@@ -22,6 +22,9 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # cleanup zsh_history
 alias cleanup="clear && truncate -s 0 ~/.zsh_history"
 
+# make ls output colourful by default
+alias ls="ls -G"
+
 # rails aliases
 alias rs="./bin/dev"
 alias rc="rails console"
