@@ -11,13 +11,13 @@ brew "gmp"
 brew "libyaml"
 brew "readline"
 brew "rust"
+brew "redis", restart_service: :changed
+brew "postgresql@17", restart_service: :changed
+brew "libpq"
 
 # dev tools
 brew "vim"
 brew "mise"
-brew "postgresql@17", restart_service: :changed
-brew "libpq"
-brew "redis", restart_service: :changed
 
 # apps
 cask "ghostty"
