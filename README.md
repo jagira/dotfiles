@@ -1,20 +1,24 @@
 # dotfiles
 Brewfile and config files for vim, ghostty, etc.
 
-Clone dotfiles repo
-
-    git clone git@github.com:jagira/dotfiles.git ~/dotfiles
-    cd dotfiles
-
-### Create config directory
-
-    mkdir -p ~/.config
-
 ### Setup macos
 
 Install command line tools
 
     xcode-select install
+
+Set hostname
+
+    sudo scutil --set HostName ‘pirate’
+
+Clone dotfiles repo
+
+    git clone git@github.com:jagira/dotfiles.git ~/dotfiles
+    cd dotfiles
+
+Create config directory
+
+    mkdir -p ~/.config
 
 Install homebrew
 
@@ -24,13 +28,23 @@ Install brew packages
 
     brew bundle
 
-Setup git
+#### zsh
+
+Remove .zshrc
+
+    rm ~/.zshrc
+
+Link zshrc
+
+    ln -s ~/dotfiles/zshrc ~/.zshrc
+
+#### git
 
     git config --global color.ui true
     git config --global user.name "Jigar Patel"
     git config --global user.email "jagira@gmail.com"
 
-### Ghostty
+#### ghostty
 
 Remove existing config if present
 
@@ -44,17 +58,7 @@ Link config
 
     ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
 
-### zsh
-
-Remove .zshrc
-
-    rm ~/.zshrc
-
-Link zshrc
-
-    ln -s ~/dotfiles/zshrc ~/.zshrc
-
-### vim
+#### vim
 
 Remove .vimrc
 
