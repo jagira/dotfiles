@@ -29,6 +29,7 @@ alias ls="ls -G"
 alias rs="./bin/dev"
 alias rc="rails console"
 alias rlc="rails log:clear"
+alias rn="rails notes"
 alias devlog='tail -f log/development.log'
 
 # git aliases
