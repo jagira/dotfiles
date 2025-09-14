@@ -3,3 +3,5 @@
 [user]
   name = Jigar Patel
   email = jagira@gmail.com
+[init]
+	defaultBranch = master
