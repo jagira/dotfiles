@@ -40,9 +40,7 @@ Link zshrc
 
 #### git
 
-    git config --global color.ui true
-    git config --global user.name "Jigar Patel"
-    git config --global user.email "jagira@gmail.com"
+    ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
 #### ghostty
 
