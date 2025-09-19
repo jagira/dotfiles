@@ -103,6 +103,11 @@ let NERDTreeIgnore = ['\.dump$']                  " hide .dump files in nerdtree
 " fuzzbox config
 let g:fuzzbox_enable_mappings = 0                  " disable default mappings
 let g:fuzzbox_dropdown = 1                         " move prompt to top
+" ignore files specified in .rgignore for grep search
+" add .rgignore file in project root
+let g:fuzzbox_grep_ripgrep_options = [
+      \ "--ignore-file " . expand('.rgignore')
+      \ ]
 
 " indent-guides config
 let g:indent_guides_start_level = 2
