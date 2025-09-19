@@ -10,6 +10,7 @@ brew "openssl@3"
 brew "gmp"
 brew "libyaml"
 brew "readline"
+brew "ripgrep"
 brew "rust"
 brew "redis", restart_service: :changed
 brew "postgresql@17", restart_service: :changed
