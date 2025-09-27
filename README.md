@@ -16,10 +16,6 @@ Clone dotfiles repo
     git clone git@github.com:jagira/dotfiles.git ~/dotfiles
     cd dotfiles
 
-Create config directory
-
-    mkdir -p ~/.config
-
 Install homebrew
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -27,6 +23,10 @@ Install homebrew
 Install brew packages
 
     brew bundle
+
+Create config directory
+
+    mkdir -p ~/.config
 
 #### zsh
 
