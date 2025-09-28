@@ -5,7 +5,7 @@ Brewfile and config files for vim, ghostty, etc.
 
 Install command line tools
 
-    xcode-select install
+    xcode-select --install
 
 Set hostname
 
