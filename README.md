@@ -9,12 +9,13 @@ Install command line tools
 
 Set hostname
 
-    sudo scutil --set HostName ‘pirate’
+    sudo scutil --set HostName pirate
 
 Clone dotfiles repo
 
-    git clone git@github.com:jagira/dotfiles.git ~/dotfiles
+    git clone https://github.com/jagira/dotfiles.git ~/dotfiles
     cd dotfiles
+    git remote set-url origin git@github.com:jagira/dotfiles.git
 
 Install homebrew
 
@@ -32,7 +33,7 @@ Create config directory
 
 Remove .zshrc
 
-    rm ~/.zshrc
+    rm -rf ~/.zshrc
 
 Link zshrc
 
@@ -40,13 +41,19 @@ Link zshrc
 
 #### git
 
+Remove existing .gitconfig
+
+    rm -rf ~/.gitconfig
+
+Link gitconfig
+
     ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
 #### ghostty
 
 Remove existing config if present
 
-    rm ~/.config/ghostty/config
+    rm -rf ~/.config/ghostty/config
 
 Create ~/.config/ghostty directory if not present
 
@@ -60,7 +67,7 @@ Link config
 
 Remove .vimrc
 
-    rm ~/.vimrc
+    rm -rf ~/.vimrc
 
 Remove ~/.vim directory
 
