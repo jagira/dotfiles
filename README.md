@@ -7,6 +7,10 @@ Install command line tools
 
     xcode-select --install
 
+Add xcode.app so that "Developer" option can be unchecked from Spotlight
+
+    touch /Applications/xcode.app
+
 Set hostname
 
     sudo scutil --set HostName pirate
@@ -78,3 +82,13 @@ Link vimrc
     ln -s ~/dotfiles/vimrc ~/.vimrc
 
 Launch vim
+
+#### ruby
+
+Install ruby via mise (replace version)
+
+    mise use -g ruby@VERSION
+
+Enable idiomatic version file reading for ruby
+
+    mise settings add idiomatic_version_file_enable_tools ruby
