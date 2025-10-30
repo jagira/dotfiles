@@ -30,6 +30,8 @@ alias rs="./bin/dev"
 alias rc="rails console"
 alias rlc="rails log:clear"
 alias rn="rails notes"
+alias cop="rubocop"
+alias audit="bundle-audit check --update && brakeman"
 alias devlog='tail -f log/development.log'
 
 # git aliases
