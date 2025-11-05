@@ -83,6 +83,20 @@ Link vimrc
 
 Launch vim
 
+#### zed
+
+Remove existing zed settings if present
+
+    rm -rf ~/.config/zed/settings.json
+
+Create ~/.config/zed directory if not present
+
+    mkdir -p ~/.config/zed
+
+Link settings.json
+
+    ln -s ~/dotfiles/zed/settings.json ~/.config/zed/settings.json
+
 #### ruby
 
 Install ruby via mise (replace version)
