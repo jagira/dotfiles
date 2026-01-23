@@ -18,12 +18,16 @@ Set hostname
 Clone dotfiles repo
 
     git clone https://github.com/jagira/dotfiles.git ~/dotfiles
-    cd dotfiles
-    git remote set-url origin git@github.com:jagira/dotfiles.git
+
+Set remote URL
+
+    cd ~/dotfiles && git remote set-url origin git@github.com:jagira/dotfiles.git
 
 Install homebrew
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Restart terminal or open new terminal tab.
 
 Install brew packages
 
@@ -35,7 +39,7 @@ Create config directory
 
 #### zsh
 
-Remove .zshrc
+Remove existing .zshrc
 
     rm -rf ~/.zshrc
 
@@ -55,15 +59,15 @@ Link gitconfig
 
 #### ghostty
 
-Remove existing config if present
+Remove existing ghostty config
 
     rm -rf ~/.config/ghostty/config
 
-Create ~/.config/ghostty directory if not present
+Create ~/.config/ghostty directory
 
     mkdir -p ~/.config/ghostty
 
-Link config
+Link ghostty config
 
     ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
 
@@ -77,7 +81,7 @@ Remove ~/.vim directory
 
     rm -rf ~/.vim
 
-Link vimrc
+Link .vimrc
 
     ln -s ~/dotfiles/vimrc ~/.vimrc
 
@@ -85,11 +89,11 @@ Launch vim
 
 #### zed
 
-Remove existing zed settings if present
+Remove existing zed settings
 
     rm -rf ~/.config/zed/settings.json
 
-Create ~/.config/zed directory if not present
+Create ~/.config/zed directory
 
     mkdir -p ~/.config/zed
 
