@@ -25,6 +25,10 @@ alias cleanup="clear && truncate -s 0 ~/.zsh_history"
 # make ls output colourful by default
 alias ls="ls -G"
 
+# start a ruby http server on port 8000
+# requires webrick 'gem install webrick'
+alias server="ruby -run -e httpd . -p 8000"
+
 # rails aliases
 alias rs="./bin/dev"
 alias rc="rails console"
