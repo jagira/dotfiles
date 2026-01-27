@@ -31,7 +31,7 @@ Restart terminal or open new terminal tab.
 
 Install brew packages
 
-    brew bundle
+    brew bundle --verbose
 
 Create config directory
 
