@@ -10,6 +10,9 @@ zstyle ':vcs_info:git:*' formats '%F{#fab387}%f %F{green}%b%f '
 setopt PROMPT_SUBST
 PROMPT='%F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f%F{blue}❯%f%F{green}❯%f '
 
+# set vim as default editor
+export EDITOR="vim"
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
