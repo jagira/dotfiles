@@ -32,6 +32,9 @@ alias ls="ls -G"
 # requires webrick 'gem install webrick'
 alias server="ruby -run -e httpd . -p 8000"
 
+# Enable frozen string literals for ruby by default
+export RUBYOPT='--enable-frozen-string-literal'
+
 # rails aliases
 alias rs="./bin/dev"
 alias rc="rails console"
