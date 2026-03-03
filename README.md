@@ -103,6 +103,10 @@ Link settings.json
 
 #### ruby
 
+Use precompiled ruby binaries
+
+    mise settings ruby.compile=false
+
 Install ruby via mise (replace version)
 
     mise use -g ruby@VERSION
