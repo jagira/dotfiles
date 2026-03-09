@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+# Disable history and sessions in ZSH
+SAVEHIST=0
+HISTSIZE=0
+
 # ZSH prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
