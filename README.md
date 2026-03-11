@@ -3,9 +3,11 @@ Brewfile and config files for vim, ghostty, etc.
 
 ### Setup macos
 
-Install command line tools
+Install command line tools for Xcode
 
     xcode-select --install
+
+For quicker install, go to Apple's Developer [portal](https://developer.apple.com/download/all/), login with Apple ID, download `Command Line Tools for Xcode` package, and install it.
 
 Add xcode.app so that "Developer" option can be unchecked from Spotlight
 
