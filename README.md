@@ -116,3 +116,21 @@ Install ruby via mise (replace version)
 Enable idiomatic version file reading for ruby
 
     mise settings add idiomatic_version_file_enable_tools ruby
+
+### SSH
+
+Generate new SSH key
+
+    ssh-keygen -t ed25519 -C "jagira@gmail.com"
+
+Start SSH agent in background
+
+    eval "$(ssh-agent -s)"
+
+Copy SSH config
+
+    cp ~/dotfiles/sshconfig ~/.ssh/config
+    
+Copy SSH key to clipboard
+
+    pbcopy < ~/.ssh/id_ed25519.pub
