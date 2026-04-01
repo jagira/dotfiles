@@ -103,6 +103,11 @@ Link settings.json
 
     ln -s ~/dotfiles/zed/settings.json ~/.config/zed/settings.json
 
+Link keymap.json
+
+    ln -s ~/dotfiles/zed/keymap.json ~/.config/zed/keymap.json
+
+
 #### ruby
 
 Use precompiled ruby binaries
