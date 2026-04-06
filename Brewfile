@@ -20,7 +20,7 @@ brew "vim"
 brew "mise"
 
 # fonts
-brew "font-symbols-only-nerd-font"
+cask "font-symbols-only-nerd-font"
 
 # apps
 cask "ghostty"
