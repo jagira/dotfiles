@@ -7,57 +7,33 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "terminal": {
-    "dock": "left",
-    "default_width": 9999
-  },
-  "collaboration_panel": {
-    "button": false,
-  },
-  "notification_panel": {
-    "button": false,
-  },
-  "outline_panel": {
-    "button": false,
-  },
-  "debugger": {
-    "button": false,
-  },
-  "title_bar": {
-    "show_sign_in": false
-  },
-  "auto_update": false,
+  // Auto Update
+    "auto_update": false,
+
+  // Editor
   "tab_size": 2,
-  "prettier": {
-    "allowed": false
-  },
-  "completions": {
-    "lsp": false
-  },
-  "enable_language_server": false,
-  "vim_mode": false,
-  "base_keymap": "VSCode",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "disable_ai": true,
-  "ui_font_size": 16,
   "buffer_font_size": 15,
-  "buffer_font_fallbacks": [
-    "Symbols Nerd Font"
-  ],
+  "buffer_font_fallbacks": ["Symbols Nerd Font"],
+  "ui_font_size": 16,
+
+  // Theme
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark"
   },
+
+  // Keymap
+  "base_keymap": "VSCode",
+  "vim_mode": false,
+
+  // Language Servers
+  // Disabled globally — only enabled per language below
+  "enable_language_server": false,
   "languages": {
     "Ruby": {
       "enable_language_server": true,
-      "language_servers": [
-        "rubocop"
-      ]
+      "language_servers": ["rubocop"]
     },
     "JSON": {
       "enable_language_server": true
@@ -66,10 +42,51 @@
       "enable_language_server": true
     }
   },
+
+  // Extensions
+  // LSPs bundled with these extensions are blocked by "enable_language_server": false
   "auto_install_extensions": {
     "html": true,
     "ruby": true,
     "scss": true,
     "git-firefly": true
+  },
+
+  // Formatting
+  "prettier": {
+    "allowed": false
+  },
+  "completions": {
+    "lsp": false
+  },
+
+  // Terminal
+  "terminal": {
+    "dock": "left",
+    "default_width": 9999
+  },
+
+  // UI Panels
+  "title_bar": {
+    "show_sign_in": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "debugger": {
+    "button": false
+  },
+
+  // Privacy
+  "disable_ai": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
   }
 }
