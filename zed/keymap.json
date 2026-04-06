@@ -10,5 +10,16 @@
     "bindings": {
       "cmd-shift-i": "editor::AutoIndent"
     }
-  }
+  },
+  {
+    "bindings": {
+      "cmd-shift-t": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-g": "git_panel::ToggleFocus"
+    }
+  },
 ]
