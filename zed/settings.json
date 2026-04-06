@@ -25,10 +25,32 @@
   "disable_ai": true,
   "ui_font_size": 16,
   "buffer_font_size": 15,
-  "buffer_font_fallbacks": ["Symbols Nerd Font"],
+  "buffer_font_fallbacks": [
+    "Symbols Nerd Font"
+  ],
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark"
+  },
+  "languages": {
+    "Ruby": {
+      "enable_language_server": true,
+      "language_servers": [
+        "rubocop"
+      ]
+    },
+    "JSON": {
+      "enable_language_server": true
+    },
+    "JSONC": {
+      "enable_language_server": true
+    }
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "ruby": true,
+    "scss": true,
+    "git-firefly": true
   }
 }
