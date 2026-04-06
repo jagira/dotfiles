@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "terminal": {
-    "dock": "right",
+    "dock": "left",
     "default_width": 9999
   },
   "auto_update": false,
