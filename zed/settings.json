@@ -11,6 +11,21 @@
     "dock": "left",
     "default_width": 9999
   },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "notification_panel": {
+    "button": false,
+  },
+  "outline_panel": {
+    "button": false,
+  },
+  "debugger": {
+    "button": false,
+  },
+  "title_bar": {
+    "show_sign_in": false
+  },
   "auto_update": false,
   "tab_size": 2,
   "prettier": {
