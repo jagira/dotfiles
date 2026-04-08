@@ -24,10 +24,10 @@ cask "font-symbols-only-nerd-font"
 
 # apps
 cask "ghostty"
+cask "zed"
 cask "firefox"
 cask "google-chrome"
 cask "ente-auth"
 cask "fork"
-cask "zed"
 cask "vlc"
 cask "flux-app"
