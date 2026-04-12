@@ -8,32 +8,32 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // Auto Update
-    "auto_update": false,
-
+  "auto_update": false,
   // Editor
   "tab_size": 2,
   "buffer_font_size": 15,
-  "buffer_font_fallbacks": ["Symbols Nerd Font"],
+  "buffer_font_fallbacks": [
+    "Symbols Nerd Font"
+  ],
   "ui_font_size": 16,
-
   // Theme
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark"
   },
-
   // Keymap
   "base_keymap": "VSCode",
   "vim_mode": false,
-
   // Language Servers
   // Disabled globally — only enabled per language below
   "enable_language_server": false,
   "languages": {
     "Ruby": {
       "enable_language_server": true,
-      "language_servers": ["rubocop"]
+      "language_servers": [
+        "rubocop"
+      ]
     },
     "JSON": {
       "enable_language_server": true
@@ -42,7 +42,6 @@
       "enable_language_server": true
     }
   },
-
   // Extensions
   // LSPs bundled with these extensions are blocked by "enable_language_server": false
   "auto_install_extensions": {
@@ -51,7 +50,6 @@
     "scss": true,
     "git-firefly": true
   },
-
   // Formatting
   "prettier": {
     "allowed": false
@@ -59,13 +57,11 @@
   "completions": {
     "lsp": false
   },
-
   // Terminal
   "terminal": {
     "dock": "left",
     "default_width": 9999
   },
-
   // UI Panels
   "title_bar": {
     "show_sign_in": false
@@ -82,7 +78,6 @@
   "debugger": {
     "button": false
   },
-
   // Privacy
   "disable_ai": true,
   "telemetry": {
