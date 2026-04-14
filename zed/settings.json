@@ -63,6 +63,9 @@
     "default_width": 9999
   },
   // UI Panels
+  "git_panel": {
+    "dock": "right"
+  },
   "title_bar": {
     "show_sign_in": false
   },

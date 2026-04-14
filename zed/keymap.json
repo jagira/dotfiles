@@ -13,13 +13,18 @@
   },
   {
     "bindings": {
-      "cmd-shift-t": "terminal_panel::ToggleFocus"
+      "cmd-shift-t": "terminal_panel::Toggle"
     }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-g": "git_panel::ToggleFocus"
+      "cmd-shift-g": "git_panel::Toggle"
     }
   },
+  {
+    "bindings": {
+      "cmd-shift-e": "project_panel::Toggle"
+    }
+  }
 ]
