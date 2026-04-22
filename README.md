@@ -31,6 +31,10 @@ Install homebrew
 
 Restart terminal or open new terminal tab.
 
+Turn off brew analytics
+
+    brew analytics off
+
 Install brew packages
 
     brew bundle --verbose
