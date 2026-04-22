@@ -1,7 +1,29 @@
 # dotfiles
 Brewfile and config files for vim, ghostty, etc.
 
-### Setup macos
+### Quick setup
+
+Clone dotfiles repo
+
+    git clone https://github.com/jagira/dotfiles.git ~/dotfiles
+
+Set remote URL
+
+    cd ~/dotfiles && git remote set-url origin git@github.com:jagira/dotfiles.git
+
+Run install script
+
+    bash ~/dotfiles/install.sh
+
+The script will walk through macOS setup, Homebrew, config symlinks, Ruby, and SSH key generation. Each step is idempotent — safe to re-run if something fails partway through.
+
+---
+
+### Manual setup
+
+Follow the steps below if you prefer to run each part individually, or need to troubleshoot a specific section.
+
+#### macos
 
 Install command line tools for Xcode
 
@@ -17,13 +39,7 @@ Set hostname
 
     sudo scutil --set HostName pirate
 
-Clone dotfiles repo
-
-    git clone https://github.com/jagira/dotfiles.git ~/dotfiles
-
-Set remote URL
-
-    cd ~/dotfiles && git remote set-url origin git@github.com:jagira/dotfiles.git
+#### homebrew
 
 Install homebrew
 
@@ -39,11 +55,13 @@ Install brew packages
 
     brew bundle --verbose
 
+#### symlinks
+
 Create config directory
 
     mkdir -p ~/.config
 
-#### zsh
+##### zsh
 
 Remove existing .zshrc
 
@@ -53,7 +71,7 @@ Link zshrc
 
     ln -s ~/dotfiles/zshrc ~/.zshrc
 
-#### git
+##### git
 
 Remove existing .gitconfig
 
@@ -63,7 +81,7 @@ Link gitconfig
 
     ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
-#### ghostty
+##### ghostty
 
 Remove existing ghostty config
 
@@ -77,7 +95,7 @@ Link ghostty config
 
     ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
 
-#### vim
+##### vim
 
 Remove .vimrc
 
@@ -93,7 +111,7 @@ Link .vimrc
 
 Launch vim
 
-#### zed
+##### zed
 
 Remove existing zed settings
 
@@ -111,14 +129,13 @@ Link keymap.json
 
     ln -s ~/dotfiles/zed/keymap.json ~/.config/zed/keymap.json
 
-
 #### ruby
 
 Use precompiled ruby binaries
 
     mise settings ruby.compile=false
 
-Install ruby via mise (replace version)
+Install ruby via mise (omit version for latest)
 
     mise use -g ruby@VERSION
 
@@ -126,7 +143,7 @@ Enable idiomatic version file reading for ruby
 
     mise settings add idiomatic_version_file_enable_tools ruby
 
-### SSH
+#### SSH
 
 Generate new SSH key
 
@@ -139,7 +156,7 @@ Start SSH agent in background
 Copy SSH config
 
     cp ~/dotfiles/sshconfig ~/.ssh/config
-    
+
 Copy SSH key to clipboard
 
     pbcopy < ~/.ssh/id_ed25519.pub
