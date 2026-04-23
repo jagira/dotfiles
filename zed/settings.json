@@ -63,6 +63,9 @@
     "default_width": 9999
   },
   // UI Panels
+  "project_panel": {
+    "dock": "left"
+  },
   "git_panel": {
     "dock": "right"
   },
