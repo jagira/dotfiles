@@ -7,7 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "confirm_quit": true,
   // Auto Update
+  "status_bar": {
+    "show_active_file": false
+  },
   "auto_update": false,
   // Editor
   "tab_size": 2,
@@ -70,6 +74,11 @@
     "dock": "right"
   },
   "title_bar": {
+    "show_branch_name": true,
+    "show_user_menu": true,
+    "show_onboarding_banner": true,
+    "show_project_items": true,
+    "show_branch_status_icon": true,
     "show_sign_in": false
   },
   "collaboration_panel": {
