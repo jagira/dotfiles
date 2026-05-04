@@ -3,6 +3,12 @@ Brewfile and config files for vim, ghostty, etc.
 
 ### Quick setup
 
+Install command line tools for Xcode
+
+    xcode-select --install
+
+For quicker install, go to Apple's Developer [portal](https://developer.apple.com/download/all/), login with Apple ID, download `Command Line Tools for Xcode` package, and install it.
+
 Clone dotfiles repo
 
     git clone https://github.com/jagira/dotfiles.git ~/dotfiles
