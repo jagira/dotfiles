@@ -4,7 +4,7 @@
 theme = One Half Dark
 # Font
 font-family = Monaco
-font-size = 13
+font-size = 14
 
 # Tabs
 window-new-tab-position = end
