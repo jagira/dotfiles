@@ -166,3 +166,24 @@ Copy SSH config
 Copy SSH key to clipboard
 
     pbcopy < ~/.ssh/id_ed25519.pub
+
+---
+
+### Known issues
+
+#### postgresql@18 fails to install with `dict_snowball` error
+
+`initdb` fails during `brew install postgresql@18` with:
+
+    FATAL: could not access file "dict_snowball": No such file or directory
+
+The bottle does not symlink the `lib/postgresql/` subdirectory to the path `pg_config --pkglibdir` reports, so bundled extensions are unreachable. Fix by manually creating the symlink:
+
+    ln -s /opt/homebrew/Cellar/postgresql@18/18.4/lib/postgresql /opt/homebrew/lib/postgresql@18
+
+Then complete the install:
+
+    brew postinstall postgresql@18
+
+This is a brew packaging bug. The same issue may affect postgresql@17 — substitute the version number accordingly.
+
