@@ -12,7 +12,7 @@ brew "libyaml"
 brew "readline"
 brew "ripgrep"
 brew "rust"
-brew "postgresql@17", restart_service: :changed
+brew "postgresql@18", restart_service: :changed
 brew "libpq"
 
 # dev tools
