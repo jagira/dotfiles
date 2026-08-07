@@ -11,7 +11,6 @@ if ! command -v mise &>/dev/null; then
 fi
 
 info "Configuring mise for Ruby..."
-mise settings ruby.compile=false
 mise settings add idiomatic_version_file_enable_tools ruby
 success "mise Ruby settings applied"
 
